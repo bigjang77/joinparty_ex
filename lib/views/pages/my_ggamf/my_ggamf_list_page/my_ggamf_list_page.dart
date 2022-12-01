@@ -26,7 +26,7 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
         backgroundColor: Colors.white,
         title: Text("내 껨프", style: TextStyle(color: Colors.black)),
       ),
-      backgroundColor: kPrimaryColor,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.only(right: 30, left: 30),
         child: ListView(
@@ -35,11 +35,8 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                border: Border.all(width: 1, color: Colors.grey),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
-                ),
-                color: Colors.white,
+                border: Border.all(width: 1, color: Colors.black),
+                borderRadius: BorderRadius.circular(20),
               ),
               child: InkWell(
                 onTap: () {},
@@ -48,52 +45,6 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
                     CircleAvatar(
                       radius: 45,
                       backgroundImage: AssetImage("assets/images/20.jpg"),
-                    ),
-                    SizedBox(width: 20),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "홍길동",
-                            style: TextStyle(fontSize: 25, color: Colors.black),
-                          ),
-                          SizedBox(height: 10),
-                          Text(
-                            "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
-                            style: TextStyle(fontSize: 15, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 40),
-            Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                border: Border.all(width: 1),
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xffFBC5D8),
-                    Color.fromARGB(0, 243, 218, 153),
-                  ],
-                ),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
-                ),
-              ),
-              child: InkWell(
-                onTap: () {},
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 45,
-                      backgroundImage: AssetImage("assets/images/76.jpg"),
                     ),
                     SizedBox(width: 10),
                     Expanded(
@@ -104,6 +55,7 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
                             "김겐지",
                             style: TextStyle(fontSize: 25, color: Colors.black),
                           ),
+                          SizedBox(height: 15),
                           Text(
                             "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
                             style: TextStyle(fontSize: 15, color: Colors.black),
@@ -119,10 +71,60 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/rgb.gif"),
                 ),
-                color: kSecondaryColor,
+                border: Border.all(width: 1),
+              ),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                ),
+                height: 120,
+                child: InkWell(
+                  onTap: () {},
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: AssetImage("assets/images/76.jpg"),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5),
+                            Text(
+                              "김겐지",
+                              style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.w600),
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
+                              style: TextStyle(fontSize: 15, color: Colors.black),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 40),
+            Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/sunset.gif"),
+                ),
+                border: Border.all(width: 1),
+                borderRadius: BorderRadius.circular(20),
               ),
               child: InkWell(
                 onTap: () {},
@@ -138,9 +140,10 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "임꺾정",
+                            "김겐지",
                             style: TextStyle(fontSize: 25, color: Colors.white),
                           ),
+                          SizedBox(height: 15),
                           Text(
                             "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
                             style: TextStyle(fontSize: 15, color: Colors.white),
@@ -156,10 +159,12 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/card.gif"),
                 ),
-                color: kSecondaryColor,
+                border: Border.all(width: 1),
+                borderRadius: BorderRadius.circular(20),
               ),
               child: InkWell(
                 onTap: () {},
@@ -178,6 +183,7 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
                             "김겐지",
                             style: TextStyle(fontSize: 25, color: Colors.white),
                           ),
+                          SizedBox(height: 15),
                           Text(
                             "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
                             style: TextStyle(fontSize: 15, color: Colors.white),
@@ -193,10 +199,16 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(50),
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xffFBC5D8),
+                    Color.fromARGB(0, 243, 218, 153),
+                  ],
                 ),
-                color: kSecondaryColor,
+                border: Border.all(width: 1),
+                borderRadius: BorderRadius.circular(20),
               ),
               child: InkWell(
                 onTap: () {},
@@ -213,11 +225,12 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
                         children: [
                           Text(
                             "김겐지",
-                            style: TextStyle(fontSize: 25, color: Colors.white),
+                            style: TextStyle(fontSize: 25, color: Colors.black),
                           ),
+                          SizedBox(height: 15),
                           Text(
                             "나는 오늘밤 사냥에 나선다아dkkkkkkkkkkkkkkkkkkk",
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                            style: TextStyle(fontSize: 15, color: Colors.black),
                           ),
                         ],
                       ),
@@ -229,35 +242,6 @@ class _MyGgamfListPageState extends State<MyGgamfListPage> {
             SizedBox(height: 40),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(CustomIcons.joinparty, size: 25),
-            label: '파티참가',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CustomIcons.myparty),
-            label: '나의 파티',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CustomIcons.mygamf),
-            label: '내 껨프',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CustomIcons.recomgamf),
-            label: '추천 껨프',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CustomIcons.myprofile),
-            label: '내 프로필',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.grey[500],
-        selectedItemColor: Colors.black,
-        type: BottomNavigationBarType.fixed,
-        onTap: _onItemTapped,
       ),
     );
   }
